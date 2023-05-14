@@ -33,7 +33,9 @@ class TestConsole(unittest.TestCase):
     def test_create_valid_class(self):
         HBNBCommand().onecmd("create BaseModel")
         output = sys.stdout.getvalue().strip()
-        self.assertRegex(output, r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
+        self.assertRegex(output, r"^[0-9a-f]{8}-[0-9a-f]{4}"
+                         r"-[0-9a-f]{4}-[0-9a-f]{4}"
+                         r"-[0-9a-f]{12}$")
 
     @patch('sys.stdout', new=StringIO())
     def test_show_missing_class(self):
@@ -69,4 +71,3 @@ class TestConsole(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

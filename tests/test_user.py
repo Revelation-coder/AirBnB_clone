@@ -17,7 +17,7 @@ class TestUser(unittest.TestCase):
         self.assertGreater(len(doc), 1)
 
     def test_pycodestyle(self):
-	"""Test that models/user.py conforms to Pycodestyle."""
+        """Test that models/user.py conforms to Pycodestyle."""
         style_guide = pycodestyle.StyleGuide(version='2.8')
         file_to_check = 'models/user.py'
         result = style_guide.check_files([file_to_check])
@@ -51,4 +51,3 @@ class TestUser(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
