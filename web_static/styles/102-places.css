@@ -1,0 +1,13 @@
+.places {
+  margin-top: 30px;
+}
+
+.article {
+  flex-basis: calc(50% - 10px);
+}
+
+@media only screen and (max-width: 768px) {
+  .article {
+    flex-basis: 100%;
+  }
+}

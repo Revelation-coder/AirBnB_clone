@@ -1,0 +1,20 @@
+.locations .popover {
+  right: 0;
+}
+
+.amenities .popover {
+  right: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .locations .popover {
+    right: initial;
+    left: 0;
+  }
+  
+  .amenities .popover {
+    right: initial;
+    left: 0;
+  }
+}
+
