@@ -1,0 +1,22 @@
+.filters {
+  display: flex;
+}
+
+.locations, .amenities {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid #DDDDDD;
+}
+
+.locations:first-child, .amenities:first-child {
+  border-right: none;
+}
+
+.filters-title {
+  font-weight: 600;
+}
+
+.filters-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+}

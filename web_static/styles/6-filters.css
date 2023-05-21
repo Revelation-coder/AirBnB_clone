@@ -1,0 +1,58 @@
+.filters {
+  display: flex;
+}
+
+.locations,
+.amenities {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid #DDDDDD;
+  position: relative;
+  cursor: pointer;
+}
+
+.locations:first-child,
+.amenities:first-child {
+  border-right: none;
+}
+
+.filters-title {
+  font-weight: 600;
+}
+
+.filters-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  padding: 10px;
+  list-style: none;
+  z-index: 1;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+  display: block;
+}
+
+.locations .popover h2 {
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
